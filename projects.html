@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projets | Portfolio 2026</title>
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+
+<body>
+  <!-- Navigation Header -->
+  <header class="header">
+    <nav class="nav-container">
+      <div class="logo">
+        <img src="https://ext.same-assets.com/2859813368/2131938207.svg" alt="Logo" />
+        <span>Portfolio 2026</span>
+      </div>
+
+      <!-- Hamburger Menu Button (Mobile Only) -->
+      <button class="hamburger" aria-label="Toggle menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À Propos</a></li>
+        <li><a href="projects.html" class="active">Projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html#blog">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Projects Hero Section -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <h1>Nos Projets</h1>
+      <p class="page-subtitle">Découvrez nos réalisations en réseautique et infrastructure</p>
+    </div>
+  </section>
+
+  <!-- Projects Grid Section -->
+  <section class="content-section">
+    <div class="content-container">
+      <!-- Project Categories Filter -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="network">Réseautique</button>
+        <button class="filter-btn" data-filter="server">Serveurs</button>
+        <button class="filter-btn" data-filter="security">Sécurité</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-category="network">
+          <div class="project-image">
+            <img src="https://ext.same-assets.com/2859813368/815999480.png" alt="Infrastructure Réseau" />
+            <div class="project-overlay">
+              <button class="project-btn">Voir Détails</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Réseautique</span>
+            <h3>Infrastructure Réseau Campus</h3>
+            <p>Conception et déploiement d'une infrastructure réseau complète pour un campus universitaire avec VLAN, QoS et redondance.</p>
+            <div class="project-tech">
+              <span>Cisco</span>
+              <span>VLAN</span>
+              <span>Routing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-category="server">
+          <div class="project-image">
+            <img src="https://ext.same-assets.com/2859813368/1047488633.png" alt="Cluster Serveurs" />
+            <div class="project-overlay">
+              <button class="project-btn">Voir Détails</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Serveurs</span>
+            <h3>Cluster de Serveurs Virtualisés</h3>
+            <p>Mise en place d'un cluster de serveurs virtualisés avec haute disponibilité et équilibrage de charge.</p>
+            <div class="project-tech">
+              <span>VMware</span>
+              <span>Docker</span>
+              <span>Load Balancing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="security">
+          <div class="project-image">
+            <img src="https://ext.same-assets.com/2859813368/963779449.png" alt="Sécurité Réseau" />
+            <div class="project-overlay">
+              <button class="project-btn">Voir Détails</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Sécurité</span>
+            <h3>Solution de Sécurité Périmétrique</h3>
+            <p>Implémentation d'une solution de sécurité multicouche avec pare-feu, IDS/IPS et VPN.</p>
+            <div class="project-tech">
+              <span>Firewall</span>
+              <span>IDS/IPS</span>
+              <span>VPN</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-category="network">
+          <div class="project-image">
+            <img src="https://ext.same-assets.com/2859813368/2819140008.jpeg" alt="SDN Controller" />
+            <div class="project-overlay">
+              <button class="project-btn">Voir Détails</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Réseautique</span>
+            <h3>Réseau Défini par Logiciel (SDN)</h3>
+            <p>Déploiement d'une architecture SDN avec contrôleur centralisé pour une gestion automatisée du réseau.</p>
+            <div class="project-tech">
+              <span>OpenFlow</span>
+              <span>SDN</span>
+              <span>Automation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card" data-category="server">
+          <div class="project-image">
+            <img src="https://ext.same-assets.com/2859813368/1047488633.png" alt="Cloud Storage" />
+            <div class="project-overlay">
+              <button class="project-btn">Voir Détails</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Serveurs</span>
+            <h3>Solution de Stockage Cloud</h3>
+            <p>Création d'une plateforme de stockage cloud privé avec synchronisation multi-sites et sauvegarde automatique.</p>
+            <div class="project-tech">
+              <span>MinIO</span>
+              <span>S3</span>
+              <span>Replication</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card" data-category="security">
+          <div class="project-image">
+            <img src="https://ext.same-assets.com/2859813368/815999480.png" alt="Monitoring" />
+            <div class="project-overlay">
+              <button class="project-btn">Voir Détails</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Sécurité</span>
+            <h3>Système de Monitoring et Alertes</h3>
+            <p>Infrastructure de surveillance en temps réel avec détection d'anomalies et système d'alertes automatisé.</p>
+            <div class="project-tech">
+              <span>Prometheus</span>
+              <span>Grafana</span>
+              <span>Alerting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Suivez-nous</h3>
+        <p>Restez informé des dernières actualités et projets en nous suivant sur nos réseaux sociaux.</p>
+      </div>
+      <div class="footer-section">
+        <div class="footer-links">
+          <a href="#privacy">Politique de confidentialité</a>
+          <a href="#accessibility">Déclaration d'accessibilité</a>
+        </div>
+        <p class="address">500 Terry A Francine Blvd.<br>San Francisco, CA 94158</p>
+      </div>
+      <div class="footer-section">
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><img src="https://ext.same-assets.com/2859813368/103187438.png" alt="Facebook" /></a>
+          <a href="#" aria-label="Instagram"><img src="https://ext.same-assets.com/2859813368/3758568669.png" alt="Instagram" /></a>
+          <a href="#" aria-label="X"><img src="https://ext.same-assets.com/2859813368/909957457.png" alt="X" /></a>
+          <a href="#" aria-label="TikTok"><img src="https://ext.same-assets.com/2859813368/1153486092.png" alt="TikTok" /></a>
+        </div>
+        <p class="contact"><a href="mailto:info@monsite.com">info@monsite.com</a></p>
+        <p class="contact">01 23 45 67 89</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Portfolio 2026</p>
+      <p>© 2035 by Portfolio 2026. Powered and secured by Wix</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+  <script type="module" src="/src/projects.ts"></script>
+  <script crossorigin="anonymous" src="//unpkg.com/same-runtime/dist/index.global.js"></script>
+</body>
+
+</html>
